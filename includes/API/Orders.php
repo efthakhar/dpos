@@ -27,14 +27,16 @@ class Orders
 
     function create_order($request)
     {
+
         $products = $request->get_param( 'cart_products' );
+        
         $order = wc_create_order();
 
         //$order->set_customer_id( 1 );
 
         foreach($products as $product)
         {
-            $order->add_product( wc_get_product($product->id), $product->quantity );
+            $order->add_product( wc_get_product($product['id']), $product['quantitycd']);
         }   
        
 

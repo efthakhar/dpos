@@ -143,7 +143,7 @@ function pay() {
   }).then((res) => {
     if(res.status==200){
       show_success_message()
-      cart_products.value = []
+      cart_products.value = {}
       total_cart_amount.value = 0
       total_paying_amount.value = 0
     }
