@@ -1,0 +1,18 @@
+{
+    "name": "efthakhar/dpos",
+    "description": "A simple point of sale system for woocommerce",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "authors": [{
+        "name": "Efthakhar Bin Alam",
+        "email": "efthakharbin@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "DPOS\\": "includes/"          
+        }
+        
+    }
+}
